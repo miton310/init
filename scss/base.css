@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/*======================================
+  || color
+======================================*/
+/* ==============================
+  || breakpoints
+============================== */
+/* ==============================
+  中央寄せ
+============================== */
+/* ==============================
+ ||初期設定
+============================== */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* Text-related */
+/* 改行 */
+@media screen and (min-width: 850px) {
+  .br-sm {
+    display: none;
+  }
+}
+
+.br-lg {
+  display: none;
+}
+@media screen and (min-width: 850px) {
+  .br-lg {
+    display: block;
+  }
+}
+
+/* ==============================
+ ||display
+============================== */
+.is-block {
+  display: block;
+}
+
+.is-inlineblock {
+  display: inline-block;
+}
+
+.is-nowrap {
+  white-space: nowrap;
+}
+
+/* ==============================
+ ||text ||font
+============================== */
+.text-just {
+  text-align: justify;
+  /* 単語の間隔と文字・数値・記号など基本単位の間隔を調整する。 */
+  text-justify: inter-ideograph;
+}
+
+/* ==============================
+ ||error ||alart
+============================== */
+.required {
+  color: red;
+  padding-left: 0.5rem;
+}
+
+.note {
+  font-size: 10px;
+}
+
+/* ==============================
+ ||headline
+============================== */
+/* ==============================
+ ||link
+============================== */
+/* hover */
+@media screen and (min-width: 850px) {
+  .is-disabled:hover {
+    opacity: 0.8;
+  }
+}
+
+.is-link-color {
+  color: #FFF;
+}
+
+.is-link-line {
+  text-decoration: underline;
+}
+
+/* ==============================
+ ||image
+============================== */
+/*# sourceMappingURL=base.css.map */

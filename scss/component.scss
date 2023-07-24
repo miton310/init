@@ -1,0 +1,142 @@
+@use 'foundation/variable' as *;
+
+.c-button {}
+
+/* ==============================
+  ||Flex
+============================== */
+.flex {
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.--jc-sb {
+      justify-content: space-between;
+    }
+
+    &.--jc-center {
+      justify-content: center;
+    }
+
+    @include mq(sm) {
+      &--sm {
+        // 850px以下の時
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    @include mq() {
+
+      // 850px以上でFlex
+      &--md {
+        display: flex;
+      }
+    }
+
+    @include mq(lg) {
+      &--lg {
+        display: flex;
+      }
+    }
+  }
+
+  // inner要素（2カラム）
+  &-col-2 {
+    width: 50%;
+
+    // 400px以上のカラムサイズ
+    &--sm {
+      width: 100%;
+
+      @include mq(sm) {
+        width: 50%;
+      }
+    }
+
+    &--md {
+      width: 100%;
+
+      @include mq() {
+        width: 50%;
+      }
+    }
+
+    &--lg {
+      width: 100%;
+
+      @include mq(lg) {
+        width: 50%;
+      }
+    }
+  }
+
+  // inner要素（3カラム）
+  &-col-3 {
+    width: 33.3%;
+
+    &--sm {
+      width: 100%;
+
+      @include mq(sm) {
+        width: 33.3%;
+      }
+    }
+
+    &--md {
+      width: 100%;
+
+      @include mq() {
+        width: 33.3%;
+      }
+    }
+  }
+
+  // inner要素（4カラム）
+  &-col-4 {
+    width: 25%;
+
+    &--sm {
+      @include mq(sm) {
+        width: 25%;
+      }
+    }
+
+    &--md {
+      @include mq() {
+        width: 25%;
+      }
+    }
+
+    &--lg {
+      @include mq(lg) {
+        width: 25%;
+      }
+    }
+  }
+
+  &-col-5 {
+    width: 20%;
+
+    &--sm {
+      @include mq(sm) {
+        width: 20%;
+      }
+    }
+
+    &--md {
+      @include mq() {
+        width: 20%;
+      }
+    }
+  }
+}
+
+
+/* ==============================
+ ||grid 
+============================== */
+// grid-template-areas:main; grid-area: main;
+.grid__wrap {
+  display: grid;
+}

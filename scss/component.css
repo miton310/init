@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*======================================
+  || color
+======================================*/
+/* ==============================
+  || breakpoints
+============================== */
+/* ==============================
+  中央寄せ
+============================== */
+/* ==============================
+  ||Flex
+============================== */
+.flex__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex__wrap.--jc-sb {
+  justify-content: space-between;
+}
+.flex__wrap.--jc-center {
+  justify-content: center;
+}
+@media screen and (min-width: 400px) {
+  .flex__wrap--sm {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 850px) {
+  .flex__wrap--md {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .flex__wrap--lg {
+    display: flex;
+  }
+}
+.flex-col-2 {
+  width: 50%;
+}
+.flex-col-2--sm {
+  width: 100%;
+}
+@media screen and (min-width: 400px) {
+  .flex-col-2--sm {
+    width: 50%;
+  }
+}
+.flex-col-2--md {
+  width: 100%;
+}
+@media screen and (min-width: 850px) {
+  .flex-col-2--md {
+    width: 50%;
+  }
+}
+.flex-col-2--lg {
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .flex-col-2--lg {
+    width: 50%;
+  }
+}
+.flex-col-3 {
+  width: 33.3%;
+}
+.flex-col-3--sm {
+  width: 100%;
+}
+@media screen and (min-width: 400px) {
+  .flex-col-3--sm {
+    width: 33.3%;
+  }
+}
+.flex-col-3--md {
+  width: 100%;
+}
+@media screen and (min-width: 850px) {
+  .flex-col-3--md {
+    width: 33.3%;
+  }
+}
+.flex-col-4 {
+  width: 25%;
+}
+@media screen and (min-width: 400px) {
+  .flex-col-4--sm {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .flex-col-4--md {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .flex-col-4--lg {
+    width: 25%;
+  }
+}
+.flex-col-5 {
+  width: 20%;
+}
+@media screen and (min-width: 400px) {
+  .flex-col-5--sm {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .flex-col-5--md {
+    width: 20%;
+  }
+}
+
+/* ==============================
+ ||grid 
+============================== */
+.grid__wrap {
+  display: grid;
+}
+/*# sourceMappingURL=component.css.map */

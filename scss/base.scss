@@ -1,0 +1,156 @@
+@use './foundation/variable' as *;
+
+/* ==============================
+ ||初期設定
+============================== */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  // font-family: 'Noto Serif JP', serif;
+}
+
+/* Text-related */
+/* 改行 */
+.br-sm {
+  @include mq() {
+    display: none;
+  }
+}
+
+.br-lg {
+  display: none;
+
+  @include mq() {
+    display: block;
+  }
+}
+
+
+/* ==============================
+ ||display
+============================== */
+.is-block {
+  display: block;
+}
+
+.is-inlineblock {
+  display: inline-block;
+}
+
+.is-nowrap {
+  white-space: nowrap;
+}
+
+
+/* ==============================
+ ||text ||font
+============================== */
+.text {
+  font-size: 0.875rem;
+
+  @include mq() {
+    font-size: 1rem;
+  }
+}
+
+// .text-xs {
+//   font-size: ;
+
+//   @include mq() {
+//     font-size: ;
+//   }
+// }
+
+// .text-sm {
+//   font-size: ;
+
+//   @include mq() {
+//     font-size: ;
+//   }
+// }
+
+// .text-md {
+//   font-size: ;
+
+//   @include mq() {
+//     font-size: ;
+//   }
+// }
+
+// .text-lg {
+//   font-size: ;
+
+//   @include mq() {
+//     font-size: ;
+//   }
+// }
+
+// .text-xl {
+//   font-size: ;
+
+//   @include mq() {
+//     font-size: ;
+//   }
+// }
+
+.text--just {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+
+/* ==============================
+ ||error ||alart
+============================== */
+.alart {
+  &--warning {}
+
+  &--danger {}
+
+  &--error {}
+}
+
+.required {
+  color: red;
+  padding-left: 0.5rem;
+}
+
+.note {
+  //注釈
+  font-size: 10px;
+}
+
+
+/* ==============================
+ ||headline
+============================== */
+.headline {
+  &__lv1 {}
+
+  &__lv2 {}
+}
+
+
+/* ==============================
+ ||link
+============================== */
+/* hover */
+.is-disabled {
+  @include mq() {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.is-link-color {
+  color: #FFF;
+}
+
+.is-link-line {
+  text-decoration: underline;
+}
+
+
+/* ==============================
+ ||image
+============================== */
